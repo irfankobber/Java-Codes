@@ -1,0 +1,22 @@
+import java.util.Scanner;// we need this for GUI
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    String name = JOptionPane.showInputDialog("Enter your name");
+	    JOptionPane.showMessageDialog(null, "Hello! "+name);
+	   // int age =  JOptionPane.showInputDialog("Enter your age");//show input dialog box returns a string
+	    
+	    int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+	    JOptionPane.showMessageDialog(null, name + ", you are "+ age+ " years old ");
+	    
+	    double income = Double.parseDouble(JOptionPane.showInputDialog("Enter your income"));
+	    JOptionPane.showMessageDialog(null, name + ", you are "+ age+ " years old and your income is "+ income);
+	    
+	    
+	     
+	}
+}
