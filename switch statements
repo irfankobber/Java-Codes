@@ -16,6 +16,7 @@ public class Main{
             case "Wednesday" : System.out.println("It is Wednesday");break;
             case "THURSDAY" : System.out.println("It is THURSDAY");break;
             case "Friday" : System.out.println("It is fRIDAY");break;
+            default: System.out.println("Not a day");break;
         
         }
         
