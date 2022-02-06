@@ -1,0 +1,22 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("I love pizza ");
+		System.out.print("\nI love pizza's too \n");
+		System.out.println("He says, \"He loves pizza\"");//printing double quotes
+		
+		//To display a backslash use a double backslash
+		System.out.println("Printing backslash-> \\");
+		
+		/*
+		 * A multiline comment
+		 * 
+		 * 
+		 */
+
+	}
+
+}
