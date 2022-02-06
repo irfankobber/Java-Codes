@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+import java.util.Random;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Random random = new Random();
+	    // we need an instance of the random class to use🎈🎈🎈 
+	    
+	    int x = random.nextInt();//produces sudo numbers from -2bil to 2 billion
+	    //so we need to set a limit for which it's gonna show random numbers
+	    
+	   // this is done below
+	   
+	   x= random.nextInt(6);//will print numbers from 0 to 5
+	   x=random.nextInt(6)+1; // will print from 0 to 6
+	   double y = random.nextDouble();
+	   boolean z = random.nextBoolean();
+	   
+	   
+	   System.out.println("X:="+x+"\nY= "+y+ "\nZ= "+z);
+	    
+	    
+	}
+}
