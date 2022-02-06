@@ -1,0 +1,73 @@
+/*
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println("I love pizza ");
+		System.out.print("\nI love pizza's too \n");
+		System.out.println("He says, \"He loves pizza\"");//printing double quotes
+		
+		//To display a backslash use a double backslash
+		System.out.println("Printing backslash-> \\");
+		System.out.println();
+		System.out.println();
+		
+		/*
+		 * A multiline comment
+		 * 
+		 * 
+		 */
+/*
+	}
+
+}
+*/
+
+public class Main{
+	
+	public static void main(String[] args) {
+		
+		/*
+		 * A variable is a placeholder for a value.
+		 * 
+		 * There are eight data types;
+		 * 
+		 * boolean/1 bit/primitive /true or false
+		 * byte /1byte/ p/         /  -128 to 127
+		 * short/2byte/p/          / -32,768 to 32767
+		 * int  /4byte/p/         / -2billion to 2 billion
+		 * long/8byte/p/          /-9 quintillion to 9 quintillion
+		 * float/4byte/p/ fractional numbers upto 6-7 digits
+		 * double/8bytes/p/ fractional number upto 15 digits
+		 * char/2byts /p/ single character
+		 * string/varies/ reference/ a sequence of characters
+		 * 
+		 */
+		
+		/* Primitive vs Reference data types
+		 * 
+		 * Primitive is 8 types, reference is unlimitied types
+		 * stores data, stores address
+		 * can hold only 1 value, can hold more than one value
+		 * less memory, more memory
+		 * fast, slow
+		 * 
+		 * 
+		 */
+		System.out.print("true\n");
+		int x; //declaration
+		x=123; // assignment
+		//int x=123; //initialization
+		
+		System.out.println(x);
+		System.out.println("My number is: "+x);
+		
+		byte y =9;
+		
+		System.out.println(y);
+		
+		String name = "Azwad Fawad Hasan";
+		System.out.println(name);
+	}
+}
