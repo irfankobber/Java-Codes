@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		
+		Scanner scanner = new Scanner(System.in);// using the Scanner class to create a scanner object 
+				
+		System.out.println("What is your name");
+		
+		String name = scanner.nextLine();
+		
+		System.out.println("How old are you ?")
+		;int age = scanner.nextInt();//this doesn't work because suppose in age you gave 20, here 20 is 20\n so 20 gets read but the /n remains and when the nextline method is called it takes that \n into account and thiinks thath you have already entered the  favourite food as nothing
+		scanner.nextLine();
+		
+			System.out.println("What is your favourite food ?")
+		;String food = scanner.nextLine();
+		
+		System.out.println("Hello "+name);
+		System.out.println(name+ ", you are "+ age +" years old.");
+		System.out.println("you like "+ food);
+	}
+}
