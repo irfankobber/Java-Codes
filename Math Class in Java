@@ -1,0 +1,53 @@
+import java.util.Scanner;// we need this for GUI
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		
+		double x =3.14
+		;double y = -10;
+		
+		double z = Math.min(x, y);
+		System.out.println("The smaller number between x and y is "+z);
+		
+		double w = -9.4;
+		w=Math.abs(w);//gives us absolute value
+		System.out.println("The absolute value of w is "+w);
+		
+		z=104.8;
+		z=Math.round(z);//used for rounding;
+		
+		System.out.println("Rounding Z "+z);
+		z=104.8;
+		z=Math.ceil(z);//used for finding ceiling;
+		
+		System.out.println("Ceiling of  Z "+z);
+		//z=101.12;
+		
+		z=Math.floor(z);//used for finding floor;
+		
+		System.out.println("Floor of  Z "+z);
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter side x of a triangle, x: ");
+		x= scanner.nextDouble();
+		System.out.println("Enter side y of triangle, y: ");
+		scanner.nextLine();
+		
+		y = scanner.nextDouble();
+		
+		System.out.println("Using pythagoras theorem");
+		z=Math.sqrt((x*x) + (y*y));	
+		System.out.println("The other side is "+z);
+		
+		scanner.close();
+		
+		
+		
+		
+	     
+	}
+}
