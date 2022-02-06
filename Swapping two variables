@@ -1,0 +1,20 @@
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Hello World");
+		String x = "burger";
+		String y = "Pizza";
+		System.out.println("Printing x:"+x);
+		System.out.println("Printing y:"+y);
+		System.out.println("Using Temp to swap variables");
+		String temp;
+		temp=x;
+		x=y;
+		y=temp;
+		 System.out.println("Printing x:"+x);
+		System.out.println("Printing y:"+y);
+		
+		
+	}
+}
