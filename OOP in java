@@ -1,0 +1,54 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		/*
+		 * 
+		 * we need to create a different class
+		 * So we could do this either i
+		 * in the same java file 
+		 * or in a seperate java file
+		 */
+		
+		Car myCar = new Car();
+		
+		Car myCar2= new Car();
+		
+		
+		System.out.println(myCar.model);
+		System.out.println(myCar.make);
+		System.out.println(myCar.color);
+		myCar.drive();
+		myCar.brake();
+		
+		myCar2.color="Green";
+		System.out.println(myCar2.model);
+		System.out.println(myCar2.make);
+		System.out.println(myCar2.color);
+
+	     
+	}
+
+public class Car {
+	String make = "Chevrolet";
+	String model ="Corvette";
+	int year = 2020;
+	String color = "blue";
+	double price = 50000.00;
+	
+	void drive() {
+		System.out.println(" You Drive the car ");
+		
+	}
+	void brake() {
+		System.out.println("You step on the brakes");
+		
+	}
+
+
+}
+
+}
