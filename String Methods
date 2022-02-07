@@ -1,0 +1,60 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //A string is a reference data type used to store one or more characters 
+	    String name = "Bro";
+	    //boolean result = name.equals("Bro");
+	    //System.out.println(result);
+	    System.out.println();
+	    
+	    //int result = name.length();
+	   // System.out.println(result);
+	    //System.out.println();
+	    
+	    //char result = name.charAt(0)// finds out what letter is at what number like 0,1,2->B,r,o
+	    //result = name.indexOf("r");
+	    //System.out.println(result);
+	    //System.out.println();
+	    
+	   // boolean result = name.isEmpty();
+	    //System.out.println(result);
+	    
+	    String result = name.toUpperCase();
+	    result = name.toLowerCase();
+	    System.out.println(result);
+	    
+	    name = "            BROO            ";
+	    result = name.trim();
+	    System.out.println(result);
+	    
+	    result = name.replace('O','8');
+	    name=result;
+	    result= name.replace(' ','_');
+	   // result=name.trim();
+	    System.out.println(result);
+	    
+	    
+	    
+	    
+	    
+	    
+
+	   
+	    
+	   
+	    
+	}
+	
+}	
