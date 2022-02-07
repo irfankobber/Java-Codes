@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main{
+    
+    public static void main (String[] args){
+        
+      //final keyword is a keyword when used with a variable assigned with a number or a value, it's value can't be changed later on
+      final double PI =3.142121; //this value will remain the same, doing PI=5 in some other line will cause an error
+      System.out.println(PI);
+        
+    }   
+    
+    
+    
+}
