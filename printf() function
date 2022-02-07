@@ -1,0 +1,118 @@
+import java.util.*;
+
+public class Main{
+    
+    public static void main (String[] args){
+        System.out.println("Hello World");
+        
+        // printf() = an optional method to control, format , and display text to the cosole window
+        //              two arguments = format string + (object/variable/value)
+        //              % [flags] [precision] [width] [conversion character]
+        
+        //with printf you need a format string and either an object, a variable or a value depending where you place the format specifier %depending
+        
+        System.out.printf("This is a format string ", 123);//123 is an object/value where
+        System.out.println();
+        System.out.printf("This is a %d format string ", 123); // We'll use the %d the object specifier to place it anywhere in the text
+        System.out.println();                                                   
+        System.out.printf("This is a format string %d", 123);
+        System.out.println();
+        System.out.printf("This is a format string ", 123);
+        System.out.println();
+                                                          
+        // converstion character is a letter that comes after the object specifier
+        
+        boolean myBoolean = true;
+        char myChar = '@';
+        String myString = "azwad ";
+        int  myInt= 90;
+        double myDouble = 1000;
+        
+        System.out.printf("%b",myBoolean);
+        System.out.println();
+        
+        System.out.printf("%c",myChar);
+        System.out.println();
+        
+        
+        
+      
+        
+        
+        System.out.printf("s",myString);
+        System.out.println();
+        
+        System.out.printf("%d",myInt);
+        System.out.println();
+        
+        System.out.printf("%f",myDouble);
+        System.out.println();
+        
+        
+        
+        System.out.println("\nWidth field below\n");
+        
+          //width
+        //[width] the width field, sets the minimum number of characters to be written as output
+        
+        System.out.printf("Hello %10s", myString);// writing %10s means we want 10 spaces before ourstring
+        
+        System.out.println("\n\n");
+        
+        
+        System.out.printf("Hello %-10s", myString);//here minus means the 10 empty spaces will come after the string
+        
+        
+        
+        System.out.printf("\n\n", myString);
+        //precsion 
+        //sets the number of digits of precsion when outputting floating point values
+        System.out.printf(" you have this much money %f ", myDouble);//using the the precsion field we can limit the amount of zero after 100.
+        
+        System.out.printf(" you have this much money %.2f ", myDouble);//.2 means two zeros after point
+        
+        //flags 
+        //these add an effect to output based on the flag added to the format specifier
+        //- : left-justify
+        //+ : output a plus (+) or minus (-) sign ofr a numeric values
+        //0 : numberic values are zero padded
+        //,: comma grouping separator if numbers > 1000
+        System.out.printf("\n\n", myDouble);
+        
+        System.out.printf(" you have this much money %-20f ", myDouble);
+        System.out.println(); 
+        System.out.printf("\n left justify using %-20f, here f for double/floating pionts n", myDouble);
+        System.out.println(); 
+         
+        System.out.printf(" you have this much money %20f ", myDouble);
+        System.out.println();    
+        System.out.printf("\n right justify using %20f\n", myDouble);
+        System.out.println(); 
+         
+        System.out.printf(" you have this much money %+f ", myDouble);
+        System.out.println();   
+        System.out.printf("\npadding + sign with %+f \n", myDouble);
+        System.out.println(); 
+        
+        //System.out.printf(" you have this much money %-f ", myDouble); 
+        //System.out.println();   for -ve padding just add -ve sign infront of the initial variable
+       
+        
+        System.out.printf(" you have this much money %020f ", myDouble);
+        System.out.println();   
+        System.out.printf("\n padding with zeros infront of the number %020f \n", myDouble);
+        System.out.println();  
+        
+        System.out.printf(" you have this much money %,f", myDouble);
+        System.out.println();   
+        System.out.printf("\n Seperating thousands 1000 by commas  %,f \n", myDouble);
+        System.out.println();  
+        
+        
+        
+        
+    }   
+    
+    
+    
+}
