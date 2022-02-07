@@ -1,0 +1,52 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		/*
+		 * A constructor is a special method
+		 * that is called 
+		 * when an object is instantiated
+		 * or created
+		 * 
+		 * constructor gives us the ability to create different object with different attributes
+		 * 
+		 */
+		
+		Human myhuman = new Human("Rick",12, 170);
+		Human myhuman2 = new Human("Tadow ", 51, 129);
+		
+		System.out.println(myhuman.name);
+		
+		myhuman2.eat();
+		
+		
+		
+	
+
+	     
+	}
+
+      
+public class Human {
+	
+	String name;
+	int age;
+	double weight;
+	
+	
+	Human(String name, int age, double weight){
+		this.name= name;
+		this.age =age;
+		this.weight =weight; 
+	}
+	
+	void eat () {
+		System.out.println(this.name + "is eating ");
+	}
+
+}
+
+}
