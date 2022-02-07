@@ -1,0 +1,42 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    Scanner scanner = new Scanner (System.in);
+	    int rows;
+	    int col;
+	    String symbol= "";
+	    
+	    
+	   
+	    
+	    System.out.println("Hello, enter # of rows");
+	    rows= scanner.nextInt();
+	    System.out.println("Enter the # of columns: ");
+	    col=scanner.nextInt();
+	    System.out.println("Enter the symbol to use ");
+	    symbol=scanner.next();//next will store the next token we type until we hit space 
+	    
+	    for (int i=1 ; i<=rows; i++){
+	        System.out.println();
+	            for(int j =1 ; j<=col; j++){
+	                System.out.print(symbol);
+	                
+	            }
+	    }
+	    
+	    
+	}
+	
+}	
