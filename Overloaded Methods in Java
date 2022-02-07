@@ -1,0 +1,47 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	// Overloaded Methods in java
+	// A method a block of code that is executed whenever it is called Upon 
+	// An overloaded method are methods which share the same name but have different parameters.
+	// method name + parameters = method signature 
+	
+	
+	
+	
+	int age = 20 ;
+	int x=3;
+	int y=5;
+	
+	 
+	   System.out.println(add(x,y,age));
+	    
+	}
+	
+	
+	static int add(int a , int b){
+	    return a+b;
+	}
+	
+	static int add(int a, int b, int c){
+	    return a+b+c;
+	}
+	
+		static int add(int a, int b, int c, int d){
+	    return a+b+c+d;
+	}
+	
+	
+}	
