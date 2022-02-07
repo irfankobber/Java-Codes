@@ -1,0 +1,59 @@
+ /******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    //2d array list is a dynamic list of lists meaning the size can be changed during compilation
+	    
+	   ArrayList<String> bakerylist = new ArrayList<String>();
+	   bakerylist.add("bhaat");bakerylist.add("daal");bakerylist.add("alu");
+	   System.out.println(bakerylist);
+	 //to get a certain element use .get
+	 //System.out.println(bakerylist.get(1));  -> prints daal
+	 
+	   ArrayList<String> producelist = new ArrayList<String>();
+	   producelist.add("tomato");producelist.add("chaa");producelist.add("juice");
+	   System.out.println(producelist);
+	   
+	   
+	   ArrayList<String> drinkslist = new ArrayList<String>();
+	   drinkslist.add("coffee");drinkslist.add("begun");drinkslist.add("mula");
+	   System.out.println(drinkslist);
+	   
+	   
+	   
+	   ArrayList<ArrayList<String>> AllGroceryList = new ArrayList();
+	   AllGroceryList.add(bakerylist);
+	   AllGroceryList.add(producelist);
+	   AllGroceryList.add(drinkslist);
+	   System.out.println(AllGroceryList);
+	   System.out.println();
+	   System.out.println(AllGroceryList.get(0));
+	   
+	   System.out.println();
+	   System.out.println(AllGroceryList.get(0).get(0));
+	   
+	   
+	   
+	 
+	 
+	    
+	   
+    
+	   
+	    
+	   
+	    
+	}
+	
+}	
