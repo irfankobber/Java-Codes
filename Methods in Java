@@ -1,0 +1,38 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	// Methods in java
+	// a block of code that is executed whenever it is called Upon 
+	String name = "Bro ";
+	int age = 20 ;
+	int x=3;
+	int y=5;
+	
+	   hello(name,age);
+	   System.out.println(add(x,y));
+	    
+	}
+	
+	static void hello(String name, int age){
+	    System.out.println("Hello " + name + " and your age is "+ age ) ;
+	    
+	}
+	
+	static int add(int x, int y){
+	    
+	    return (x+y);
+	}
+	
+}	
