@@ -1,0 +1,70 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	/*	
+		Gara
+	*/
+		Garage garage = new Garage ();
+		
+		Car car = new Car("BMW");
+		Car car2 = new Car("Tesla");
+		
+		garage.park(car);
+		garage.park(car2);
+	     
+	}
+
+
+public class Garage {
+	
+
+		
+		void park(Car car) {
+			
+			System.out.println("The car "+ car.name +" is parked now in the garage ");
+			
+			
+		
+	}
+  
+  
+  
+  
+public class Car {
+	
+	
+	
+
+	
+	
+	String name = "Chevrolet";
+	String model ="Corvette";
+	int year = 2020;
+	String color = "blue";
+	double price = 50000.00;
+
+
+	Car(String name){
+		this.name = name;
+	}
+
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+}
