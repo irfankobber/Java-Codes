@@ -1,0 +1,108 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	/*	
+	 *
+	 * Copying objects
+	 * 
+	 * 
+	 * 
+	 */
+		
+		Car car = new Car("Chevrolet", "Camaro", 2021);
+		//System.out.println(car.make);
+		Car car2 = new Car("Honda", "Vezel", 2011);
+		System.out.println(car);
+		
+		System.out.println(car2);
+		
+		System.out.println(car.getMake());
+		System.out.println(car2.getMake());
+		
+		car2.copy(car);
+		
+		System.out.println(car2.getMake());
+		
+	}
+public class Car extends Vehicle {
+	
+	
+	
+
+	int wheels = 4;
+	int doors = 4; 
+	
+	private String make = "Chevrolet";
+	private String model ="Corvette";
+	private int year = 2020;
+	String color = "blue";
+	double price = 50000.00;
+	
+	Car(String make, String model, int year){
+		this.setMake(make);
+		this.setModel(model);
+		this.setYear(year);
+	}
+	public String  getMake() {
+		return make;
+	}
+	public String getModel() {
+		return model;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setMake(String make) {
+		this.make=make;
+	}
+	public void setModel(String model) {
+		this.model=model;
+	}
+	public void setYear(int year) {
+		this.year=year;
+	}
+	
+	@Override
+	void go() {
+		System.out.println(" The Driver is Driving the car");
+		
+	}
+	
+	public void copy(Car x) {
+		this.setMake(x.getMake());
+		this.setModel(x.getModel());
+		this.setYear(x.getYear());
+	}
+	
+	Car (Car x){
+		this.copy(x);
+	}
+	
+	
+	
+	void drive() {
+		System.out.println(" You Drive the car ");
+		
+	}
+	void brake() {
+		System.out.println("You step on the brakes");
+		
+	}
+/*	
+	public String toString() {
+		String myString = make + " " + model + " "+ color+ " "+year;
+		return myString ;
+	}
+	*/
+	
+
+
+}
+
+	
+	
+}
