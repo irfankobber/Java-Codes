@@ -1,0 +1,71 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		/*
+		 *
+		 *all objects inherit two stirng method
+		 *by default we actually call a toString method when we call a println statement
+		 */
+		
+		//toString()= a special method that all objects inherit, that returns a string that "textually represents" an object.
+		//can be used both implicitly and explicitly
+		//implicit means indirect
+		//explicit means directly
+	
+		Car car =new Car();
+		System.out.println(car.make);
+		System.out.println(car.model);
+		System.out.println(car.color);
+		System.out.println(car.year);
+		
+		System.out.println(car);// shows the address of car 
+		System.out.println(car.toString());//also shows the address of car object
+		//but many people change this to print a textual represntation of this method
+		
+		//now 
+		//car shows it's make and model instead of address
+		// this is an explicit use of toString();
+		
+
+		
+	
+
+	     
+	}
+
+    
+public class Car {
+	
+	
+	
+
+	
+	
+	String make = "Chevrolet";
+	String model ="Corvette";
+	int year = 2020;
+	String color = "blue";
+	double price = 50000.00;
+	
+	void drive() {
+		System.out.println(" You Drive the car ");
+		
+	}
+	void brake() {
+		System.out.println("You step on the brakes");
+		
+	}
+	
+	public String toString() {
+		String myString = make + " " + model + " "+ color+ " "+year;
+		return myString ;
+	}
+
+
+}
+
+}
