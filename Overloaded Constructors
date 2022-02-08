@@ -1,0 +1,60 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		/*
+		 *overloaded constructors          
+		 *mulitple constructor within a class with same name
+		 *name + parameters = signature
+		 *
+		 */
+		
+		 Pizza myPizza = new Pizza("Thick Crust", "tomato", " mozzerella", "peparoni");
+		//mydice.roll(null,2);
+		 
+		 System.out.println("here the the ingredients for yr pizza");
+		 System.out.println(myPizza.bread);
+		 System.out.println(myPizza.topping);
+		 System.out.println(myPizza.bread);
+		 System.out.println(myPizza.cheese);
+		 
+		 Pizza myPizza2 = new Pizza("normal bread", "tomato");
+		 System.out.println(myPizza2.bread);
+		 
+
+		
+	
+
+	     
+	}
+  
+public class Pizza {
+	
+	String bread;
+	String sauce;
+	String cheese
+	;String topping;
+	
+	Pizza(){
+		
+	}
+	
+	Pizza(String bread, String sauce, String cheese, String topping){
+		this.bread =bread;
+		this.sauce=sauce;
+		this.cheese=cheese;
+		this.topping= topping; 
+	}
+	
+	Pizza(String bread, String sauce){
+		this.bread = bread;
+		this.sauce= sauce;
+	}
+
+}
+
+
+}
