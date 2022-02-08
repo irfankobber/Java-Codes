@@ -1,0 +1,91 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	/*	
+	 * abstract = abstract classes cannot be instantiated, but they can have a subclass
+	 * abstract methods are declared without an implementation
+	 * adds a level of security to the program
+	 * eg
+	 * we cannot use the vehicle class directly here
+	 * since we used the abstract keyword
+	 * 	
+	 */
+		
+		Car car  = new Car();
+		//Vehicle vehicle = new Vehicle();
+		car.go();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		System.out.println();
+		
+	
+	
+	}         
+
+public abstract class  Vehicle {//vehicle class is the super class/parent class
+	//car and bicycle class are child classes
+	
+	double speed;
+	abstract void go() ;
+	
+	
+	void stop() {
+		System.out.println("This vehicle is stopped");
+		
+	}
+}
+
+public class Car extends Vehicle {
+	
+	
+	
+
+	int wheels = 4;
+	int doors = 4; 
+	
+	String name = "Chevrolet";
+	String model ="Corvette";
+	int year = 2020;
+	String color = "blue";
+	double price = 50000.00;
+	
+	@Override
+	void go() {
+		System.out.println(" The Driver is Driving the car");
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	void drive() {
+		System.out.println(" You Drive the car ");
+		
+	}
+	void brake() {
+		System.out.println("You step on the brakes");
+		
+	}
+	
+	public String toString() {
+		String myString = name + " " + model + " "+ color+ " "+year;
+		return myString ;
+	}
+	
+	
+
+
+}
+
+	
+	
+}
