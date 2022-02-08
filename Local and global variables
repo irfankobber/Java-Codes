@@ -1,0 +1,48 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+		/*
+		 *local = declared inside a method, is visible only to that method
+		 *global = declared outside a method, but within a class.
+		 *          but visible to all parts of a class.
+		 *          
+		 *
+		 *
+		 *
+		 */
+		
+		DiceRoller mydice = new DiceRoller();
+		//mydice.roll(null,2);
+
+		
+	
+
+	     
+	}
+  import java.util.Random;
+
+public class DiceRoller {
+//putting Random random; here would mean that the random number is global
+//putting int random; here would mean that the integer is global
+	
+	DiceRoller()
+	{
+		Random random = new Random();//local variables to DiceRoller
+		int number =0;
+		
+		roll(random, number);//passing the parameters bcoz they are local
+		
+	}
+	
+	void roll(Random random, int number) {
+		number = random.nextInt(6)+1;
+		System.out.println(number);
+	}
+}
+
+
+}
