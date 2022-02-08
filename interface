@@ -1,0 +1,56 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	/*	
+	 *
+	 *interface
+	 *a template that can be applied to a class
+	 *similar to inheritance but specifies what a class has/must do.
+	 *classes can apply more than one interface, inheritance is limited to 1 super
+	 *
+	 * 
+	 * 
+	 * 
+	 */
+		Rabbit myrabbit = new Rabbit();
+		myrabbit.flee();
+		Fish fish = new Fish();
+		fish.hunt();
+
+		
+	}
+	
+	
+}
+***********************************************************
+
+public interface Predator {
+	void hunt();
+
+}
+*************************************************************
+
+public class Rabbit implements Prey {
+	public void flee() {
+		System.out.println("Rabbit is fleeing away");
+	}
+}
+***********************************************************
+
+public class Fish implements Prey, Predator {
+	@Override
+	public void hunt() {
+		System.out.println("This fish is hunting smaller fish");
+		
+		
+	}
+	
+	public void flee() {
+		System.out.println("This fish is getting away from bigger fish");
+	}
+	
+}
