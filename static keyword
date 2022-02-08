@@ -1,0 +1,38 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+
+
+public class Main
+{
+	public static void main(String[] args) {
+	/*	
+	 * Static = modifier.
+	 * a single copy of a variable/method that is created and shared
+	 * The class "owns the static member.
+		
+	*/
+		Friend f1= new Friend ("SPONGEBOB");
+		Friend f2= new Friend ("sabOB");
+		
+		System.out.println(Friend.numberOfFriends);
+	    Friend.showtotalfriends();//this is the preferred way of calling this
+	}
+
+    
+public class Friend {
+	
+	String name ;
+	static int numberOfFriends;
+	
+	Friend (String name){
+		this.name = name;
+		numberOfFriends++;
+	}
+	
+	static void showtotalfriends() {
+		System.out.println("The total number of Friends are"+numberOfFriends);
+	}
+
+}
+
+}
