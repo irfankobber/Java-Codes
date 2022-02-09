@@ -1,0 +1,39 @@
+import java.util.Scanner;
+import javax.swing.JOptionPane;
+import java.io.File;
+
+public class Main
+{
+	public static void main(String[] args) {
+	/*	
+	 *
+	 *Java files class
+	 *files is an abstract representation of file and directory pathnames
+	 *
+	 * 
+	 * 
+	 * C:\\Users\\user\\Desktop\\secret_message.txt
+	 */
+		
+		File file = new File("secret_message.txt");
+		File files2 = new File("C:\\Users\\user\\Desktop\\secret_message.txt");
+		if(file.exists()) {
+			System.out.println("That file exits! :0!");
+			//getpath 
+			//the path is whatever you have listed between the constructor of the file class
+			System.out.println(file.getPath());
+			//getting absolute path of a file or getting address of a file
+			System.out.println(file.getAbsolutePath());
+			//isfile method confirms whether our file is a file
+			System.out.println(file.isFile());
+			//file.delete();//deletes files
+		}
+		else {
+			System.out.println("That file doesn't exist");
+		}
+		
+		
+	}
+	
+	
+}
